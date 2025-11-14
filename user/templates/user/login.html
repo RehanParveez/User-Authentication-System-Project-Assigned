@@ -1,0 +1,14 @@
+{% extends 'user/parent.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="card shadow-sm mt-4">
+  <div class="card-body">
+    <h3>Login</h3>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
