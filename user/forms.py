@@ -1,8 +1,7 @@
 from django import forms
-from user.models import Kaam
+from user.models import Register
 
-
-class KaamForm(forms.ModelForm):
+class RegisterForm(forms.ModelForm):
     class Meta:
-     model = Kaam
-     fields = ['title', 'description', 'completed']
+     model =Register
+     fields = ['name', 'email', 'password1', 'password2']
