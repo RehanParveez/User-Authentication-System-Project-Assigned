@@ -12,7 +12,9 @@
 
       <label for="" class="mt-2">Password</label>
       <input type="password" name="password" placeholder="Enter Your Password" class="form-control">
-      <p>If you forgot password <a href="{% url 'password_reset' %}">Forgot Password</a></p>
+      <p>If you forgot password <a href="{% url 'password_reset' %}">Forgot Password</a>
+        
+      </p>
       Don't have an account? <a href="{% url 'signup' %}">Click Here</a>
       <button type="submit" class="btn btn-primary mt-3">Login</button>
     </form>
